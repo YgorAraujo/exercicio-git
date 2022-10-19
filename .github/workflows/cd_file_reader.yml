@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Read file contents 2
+name: Read file contents
 
 # Controls when the workflow will run
 on:
@@ -15,7 +15,7 @@ on:
     inputs:
       FILE:
         description: 'Give a file as input' 
-        type: filepicker  
+        default: ''  
         required: true
 
 env:
