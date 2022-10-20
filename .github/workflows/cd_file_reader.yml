@@ -25,12 +25,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - name: Read file contents
-        id: read_file
-        uses: andstor/file-reader-action@v1
-        with:
-          path: "package.json"
+      - name: File contents
+        run: |
+          python3 C:/Users/feliyg01/Git/exercicio-git/CICD/file_reader.oy
 
       # Runs a single command using the runners shell
-      - name: File contents
-        run: echo "${ steps.read_file.outputs.contents }"
+      # - name: File contents
+      #   run: echo "${ steps.read_file.outputs.contents }"
