@@ -15,7 +15,7 @@ on:
     inputs:
       FILE:
         description: 'Give a file as input' 
-        default: ''  
+        type: input.file  
         required: true
 
 env:
