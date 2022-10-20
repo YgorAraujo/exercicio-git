@@ -15,11 +15,13 @@ on:
     inputs:
       SERVICE:
         type: choice
-        description: Make a choice
+        description: Select the service
         options:
-        - foo
-        - bar
-        - baz
+        - IdVerification 
+        - IdVerificationBatch 
+        - IDFraudScore 
+        - IDFraudScoreBatch 
+        - LGPDDataRelease
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
