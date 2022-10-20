@@ -12,14 +12,6 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-    inputs:
-      FILE:
-        description: 'Give a file as input' 
-        type: input.file  
-        required: true
-
-env:
-  FILE: ${{ github.event.inputs.FILE }}
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -37,7 +29,7 @@ jobs:
         id: read_file
         uses: andstor/file-reader-action@v1
         with:
-          path: ${{env.FILE}}
+          path: C:\Users\feliyg01\test.txt
 
       # Runs a single command using the runners shell
       - name: File contents
