@@ -27,7 +27,7 @@ jobs:
 
       - name: File contents
         run: |
-          python3 C:/Users/feliyg01/Git/exercicio-git/CICD/file_reader.oy
+          python3 C:/Users/feliyg01/Git/exercicio-git/CICD/file_reader.py
 
       # Runs a single command using the runners shell
       # - name: File contents
