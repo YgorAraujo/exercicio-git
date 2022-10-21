@@ -15,7 +15,7 @@ on:
     inputs:
       SERVICE:
         type: choice
-        description: Select the service
+        description: Select the service to run
         options:
         - IdVerification 
         - IdVerificationBatch 
